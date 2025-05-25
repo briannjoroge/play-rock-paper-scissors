@@ -10,7 +10,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: var(--primary-font);
+  font-family: "Press Start 2P", system-ui;
 }
 
 .header-container {
@@ -31,7 +31,7 @@ body {
 }
 
 .score-update p {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: 600;
 }
 
@@ -61,8 +61,14 @@ form {
 .computer {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  /* padding: 1.5rem; */
   border: 2px dashed blue;
   text-align: center;
+}
+
+.computer h2 {
+  padding: 0.8rem 1.5rem 0 1.5rem;
+  font-size: 1.6rem;
 }
 
 .computer-selection p {
@@ -76,10 +82,15 @@ form {
 }
 
 .player {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
   border: 2px dashed blue;
   text-align: center;
+}
+
+.player h2 {
+  padding: 0.8rem 1.5rem 0 1.5rem;
+  font-size: 1.6rem;
 }
 
 .player-selection p {
@@ -96,10 +107,17 @@ form {
   background-color: azure;
   border-radius: 1.7rem;
   text-align: center;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  padding: 1.5rem;
 }
 
 .player-button p {
   font-size: 7rem;
+}
+
+.player-button h2 {
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 46.875em) {
