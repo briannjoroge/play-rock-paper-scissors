@@ -1,5 +1,5 @@
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,12 +11,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
-  /* background-color: rgba(163, 228, 12, 0.918); */
 }
-
-/* html, body {
-    min-height: 100vh;
-} */
 
 .header-container {
   width: 70%;
@@ -25,10 +20,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-right: 1rem;
-    margin-left: 1rem; */
-  min-height: 5rem;
-  /* border: 2px solid red; */
 }
 
 .header-link {
@@ -44,14 +35,81 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875em) {
   .header-container {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125em) {
   .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(163, 228, 12, 0.918);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.computer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 2px dashed blue;
+  text-align: center;
+}
+
+.computer-selection p {
+  font-size: 10rem;
+}
+
+.winner-display {
+  background-color: rgb(228, 180, 25);
+  width: 100%;
+  text-align: center;
+}
+
+.player {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 2px dashed blue;
+  text-align: center;
+}
+
+.player-selection p {
+  font-size: 10rem;
+}
+
+.player-buttons-container {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+.player-button {
+  background-color: azure;
+  border-radius: 1.7rem;
+  text-align: center;
+}
+
+.player-button p {
+  font-size: 7rem;
+}
+
+@media screen and (max-width: 46.875em) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .player-buttons-container {
     display: flex;
     flex-direction: column;
   }
