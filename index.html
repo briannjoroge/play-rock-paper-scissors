@@ -32,16 +32,19 @@
           </h2>
         </div>
         <div class="score-update">
-          <p>computer <span>0</span> - player <span>0</span></p>
+          <p>
+            computer <span id="computer-score">0</span> - player
+            <span id="player-score">0</span>
+          </p>
         </div>
       </div>
     </header>
 
-    <form action="">
+    <main class="game-container">
       <div class="computer">
         <h2>Computer</h2>
         <div class="computer-selection">
-          <p>🤜🏼</p>
+          <p id="computer-choice">🤜🏼</p>
         </div>
       </div>
 
@@ -52,25 +55,25 @@
       <div class="player">
         <h2>Player</h2>
         <div class="player-selection">
-          <p>🤜🏼</p>
+          <p id="player-choice">🤜🏼</p>
         </div>
       </div>
 
       <div class="player-buttons-container">
-        <div class="player-button">
+        <button class="player-button rock-button">
           <p>🤜🏼</p>
           <h2>Rock</h2>
-        </div>
-        <div class="player-button">
+        </button>
+        <button class="player-button paper-button">
           <p>🖐🏻</p>
           <h2>Paper</h2>
-        </div>
-        <div class="player-button">
+        </button>
+        <button class="player-button scissors-button">
           <p>✌🏻</p>
           <h2>Scissors</h2>
-        </div>
+        </button>
       </div>
-    </form>
+    </main>
 
     <script src="app.js"></script>
   </body>
